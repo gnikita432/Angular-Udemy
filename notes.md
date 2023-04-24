@@ -42,11 +42,17 @@ Event Binding ((event)="expression")
 two way data binding ([(ngmodel)] = "data")
 
 
-Propety Binding
+Propety Binding []
 One advantage:
 We are able to change things in run time
 
-property binding vs string interpolation
+property binding vs string interpolation 
 if you want to o/p some data use string interpolation 
 and if you want to change any propery such as text and all we use property binding 
 ex: [innertext] ="yellow"
+
+
+Event Binding ()
+
+
+for two way data binding we use ngmodule which is from form module

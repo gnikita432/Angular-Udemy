@@ -20,7 +20,12 @@ export class ServersComponent {
   constructor(){
     setTimeout(()=>{
       this.allowNewServer = true;
-    }, 5000);
+    }, 3000);
   }
 
+  serverAddedStatus : string = 'No Server Added';
+
+  onClickAdd(){
+    this.serverAddedStatus = 'New Server Added Successfully'
+  }
 }
