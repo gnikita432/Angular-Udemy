@@ -64,6 +64,10 @@ for two way data binding we use ngmodule which is from form module
 
 <!-- --------------------------------------Directives----------------------------- -->
 Directives are Instructions in the DOM 
+
+build in directives:
+
+Structural directives
 1) *ngIf
 
 2) for if else
@@ -72,3 +76,18 @@ we use
 <p>No user found</p>
 </ng-template>
 <p *ngIf="user; else noUser"></p>
+
+attribute directives
+
+ngStyle - dynamically update styles
+<p [ngStyle] = "{backgroundColor:getColor()}" >user is {{status}}</p>
+used property binding too here
+
+ngClass - dynamixally add or remove classes
+[ngClass] = "{online: status === 'online'}"
+key value pair
+if status is online then only attached the online class otherwise no online class
+
+structural derivative:
+ngFor - kind of loop 
+  *ngFor = " let user of users"
