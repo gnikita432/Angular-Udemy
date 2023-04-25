@@ -56,3 +56,19 @@ Event Binding ()
 
 
 for two way data binding we use ngmodule which is from form module
+
+
+
+
+
+
+<!-- --------------------------------------Directives----------------------------- -->
+Directives are Instructions in the DOM 
+1) *ngIf
+
+2) for if else
+we use 
+<ng-template #noUser>
+<p>No user found</p>
+</ng-template>
+<p *ngIf="user; else noUser"></p>
